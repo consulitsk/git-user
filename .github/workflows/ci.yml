@@ -43,7 +43,7 @@ jobs:
           CGO_ENABLED=0 go build -ldflags="-s -w" -o git-user main.go
 
       - name: Upload binary artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: git-user
           path: git-user
